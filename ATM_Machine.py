@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 class ATM:
-    def _init_(self, master):
+    def __init__(self, master):
         self.master = master
         self.master.title("ATM Machine")
         self.balance = 1000  # Initial balance
@@ -69,5 +69,5 @@ class ATM:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    atm = ATM()
+    atm = ATM(root)
     root.mainloop()
